@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<document>
+    <node numeric="123" boolean="true" other-boolean="false" text="some text" />
+    <node-with-content>
+        some content
+        <!-- some remark-->
+    </node-with-content>
+    <node-with-cdata>
+    <![CDATA[
+        cdata content here
+    ]]>
+    </node-with-cdata>
+</document>
