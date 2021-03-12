@@ -7,10 +7,8 @@
 </template>
 <script>
 import {computed} from '@vue/composition-api'
-import App from '../App.vue'
 
 export default {
-    components: { App },
     props: {
         remark: Comment
     },
