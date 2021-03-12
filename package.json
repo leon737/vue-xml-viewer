@@ -1,6 +1,6 @@
 {
   "name": "vue-xml-viewer",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -38,6 +38,8 @@
   "main": "./dist/vue-xml-viewer.common.js",
   "files": [
     "*.json",
-    "dist/*"
+    "dist/*",
+    "src/components/*",
+    "src/scss/*"
   ]
 }

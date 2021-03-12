@@ -9,13 +9,13 @@ npm install vue-xml-viewer --save
 
 ```html
 <template>
-    <div style="padding-left: 20px; padding-top: 20px;">
+    <div>
         <XmlViewer :xml="xml" />
     </div>
 </template>
 ```
 ```javascript
-import XmlViewer from './XmlViewer'
+import XmlViewer from './vue-xml-viewer'
 
 export default {
     components: {
