@@ -21,11 +21,11 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .bracket {
-    color: gray;
+    color: $bracketColor;
 }
 .element-name {
-    color: #598BA1;
+    color: $elementNameColor;
 }
 </style>

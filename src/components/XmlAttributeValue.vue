@@ -10,9 +10,9 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .attribute-value {
-    color: #CC864C;
+    color: $attributeValueColor;
     padding: 0;
     margin: 0;
 }

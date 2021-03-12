@@ -10,8 +10,8 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .attribute-name {
-    color: #9FDAFE
+    color: $attributeNameColor;
 }
 </style>

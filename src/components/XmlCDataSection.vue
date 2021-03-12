@@ -23,9 +23,9 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .content {
-    color: #CC864C;
+    color: $cdataContentColor;
 }
 .inline {
     display: inline;

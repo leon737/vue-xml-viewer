@@ -23,9 +23,9 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .content {
-    color: lightgreen;
+    color: $remarkContentColor;
 }
 .inline {
     display: inline;

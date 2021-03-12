@@ -33,7 +33,7 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .no-margin-padding {
     margin: 0;
     padding: 0;
@@ -42,9 +42,9 @@ export default {
     margin-left: 1em;
 }
 .assignment {
-    color: #9FDAFE;
+    color: $assignmentColor;
 }
 .quote {
-    color: #CC864C;
+    color: $quoteColor;
 }
 </style>
