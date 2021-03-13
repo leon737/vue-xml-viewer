@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/docs',
+  publicPath: '/vue-xml-viewer',
   configureWebpack: {
     module: {
       rules: [
