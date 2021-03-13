@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: '/demo',
   configureWebpack: {
     module: {
       rules: [
@@ -7,9 +8,13 @@ module.exports = {
           use: 'raw-loader',
         },
       ]
-    }
+    },
+    // externals: {
+    //   "@vue/composition-api": "@vue/composition-api"
+    // }
   },
   css: {
+    extract: false,
     loaderOptions: {
       scss: {
         additionalData: `

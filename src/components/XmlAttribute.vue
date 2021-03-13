@@ -11,9 +11,9 @@
 import XmlAttributeName from './XmlAttributeName'
 import XmlAttributeValue from './XmlAttributeValue'
 
-import {computed} from '@vue/composition-api'
+import {defineComponent, computed} from '@vue/composition-api'
 
-export default {
+export default defineComponent({
     name: 'XmlElement',
     components: {
         XmlAttributeName,
@@ -31,7 +31,7 @@ export default {
             value
         }
     }
-}
+})
 </script>
 <style lang="scss" scoped>
 .no-margin-padding {

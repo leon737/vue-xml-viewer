@@ -5,7 +5,9 @@
     </span>
 </template>
 <script>
-export default {
+import {defineComponent} from '@vue/composition-api'
+
+export default defineComponent({
     props: {
         name: String,
         closing: Boolean
@@ -19,7 +21,7 @@ export default {
             onClick
         }
     }
-}
+})
 </script>
 <style lang="scss" scoped>
 .bracket {

@@ -10,7 +10,9 @@
 <script>
 import XmlAttribute from './XmlAttribute'
 
-export default {
+import {defineComponent} from '@vue/composition-api'
+
+export default defineComponent({
     name: 'XmlElement',
     components: {
         XmlAttribute
@@ -18,5 +20,5 @@ export default {
     props: {
         attributes: Array
     }
-}
+})
 </script>

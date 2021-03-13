@@ -46,9 +46,9 @@ import XmlAttributeLine from './XmlAttributeLine'
 import XmlCDataSection from './XmlCDataSection'
 import XmlRemark from './XmlRemark'
 
-import {ref, computed} from '@vue/composition-api'
+import {defineComponent, ref, computed} from '@vue/composition-api'
 
-export default {
+export default defineComponent({
     name: 'XmlElement',
     components: {
         XmlElementName,
@@ -87,7 +87,7 @@ export default {
             toggleCollapsed
         }
     }
-}
+})
 </script>
 <style lang="scss" scoped>
 .bracket {

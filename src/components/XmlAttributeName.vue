@@ -4,11 +4,13 @@
     </span>
 </template>
 <script>
-export default {
+import {defineComponent} from '@vue/composition-api'
+
+export default defineComponent({
     props: {
         name: String
     }
-}
+})
 </script>
 <style lang="scss" scoped>
 .attribute-name {

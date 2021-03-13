@@ -6,9 +6,9 @@
     </div>
 </template>
 <script>
-import {computed} from '@vue/composition-api'
+import {defineComponent, computed} from '@vue/composition-api'
 
-export default {
+export default defineComponent({
     props: {
         node: Text
     },
@@ -19,7 +19,7 @@ export default {
             content
         }
     }
-}
+})
 </script>
 <style lang="scss" scoped>
 .content {
