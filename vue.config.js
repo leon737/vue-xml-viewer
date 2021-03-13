@@ -9,9 +9,9 @@ module.exports = {
         },
       ]
     },
-    // externals: {
-    //   "@vue/composition-api": "@vue/composition-api"
-    // }
+    externals: {
+      "@vue/composition-api": "@vue/composition-api"
+    }
   },
   css: {
     extract: false,
