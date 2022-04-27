@@ -1,18 +1,18 @@
 <template>
     <span>
         <span v-if="closing" class="bracket">/</span>
-        <span @click="onClick" class="element-name">{{name}}</span>
+        <span @click="onClick" class="element-name">{{ name }}</span>
     </span>
 </template>
 <script>
-import {defineComponent} from '@vue/composition-api'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
     props: {
         name: String,
         closing: Boolean
     },
-    setup(props, {emit}) {
+    setup(props, { emit }) {
         const onClick = () => {
             emit('click')
         }
@@ -20,14 +20,16 @@ export default defineComponent({
         return {
             onClick
         }
-    }
+    },
+    emits: ['click']
 })
 </script>
-<style lang="scss" scoped>
+<style scoped>
 .bracket {
-    color: $bracketColor;
+    color: var(--xml-viewer-bracket-color);
 }
+
 .element-name {
-    color: $elementNameColor;
+    color: var(--xml-viewer-element-name-color);
 }
 </style>

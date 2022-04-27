@@ -1,12 +1,13 @@
 <template>
     <div>
         <div class="content">
-            &lt;!-- <pre class="inline no-margin-padding">{{content}}</pre> --&gt;
+            &lt;!--
+            <pre class="inline no-margin-padding">{{ content }}</pre> --&gt;
         </div>
     </div>
 </template>
 <script>
-import {defineComponent, computed} from '@vue/composition-api'
+import { defineComponent, computed } from 'vue'
 
 export default defineComponent({
     props: {
@@ -21,13 +22,15 @@ export default defineComponent({
     }
 })
 </script>
-<style lang="scss" scoped>
+<style scoped>
 .content {
-    color: $remarkContentColor;
+    color: var(--xml-viewer-remark-content-color);
 }
+
 .inline {
     display: inline;
 }
+
 .no-margin-padding {
     margin: 0;
     padding: 0;

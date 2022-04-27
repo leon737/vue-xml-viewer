@@ -11,7 +11,7 @@
 import XmlAttributeName from './XmlAttributeName'
 import XmlAttributeValue from './XmlAttributeValue'
 
-import {defineComponent, computed} from '@vue/composition-api'
+import { defineComponent, computed } from 'vue'
 
 export default defineComponent({
     name: 'XmlElement',
@@ -33,18 +33,21 @@ export default defineComponent({
     }
 })
 </script>
-<style lang="scss" scoped>
+<style scoped>
 .no-margin-padding {
     margin: 0;
     padding: 0;
 }
+
 .margin-left-sm {
-    margin-left: 1em;
+    margin-left: 8px;
 }
+
 .assignment {
-    color: $assignmentColor;
+    color: var(--xml-viewer-assignment-color);
 }
+
 .quote {
-    color: $quoteColor;
+    color: var(--xml-viewer-quote-color);
 }
 </style>

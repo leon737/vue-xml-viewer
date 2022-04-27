@@ -1,19 +1,23 @@
 <template>
-    <div>
+    <div :class="theme">
         <XmlElement :node="rootNode" />
     </div>
 </template>
 <script>
 import XmlElement from './XmlElement'
 
-import {defineComponent, ref, watch} from '@vue/composition-api'
+import { defineComponent, ref, watch } from 'vue'
 
 export default defineComponent({
     components: {
         XmlElement
     },
     props: {
-        xml: String
+        xml: String,
+        theme: {
+            type: String,
+            default: 'light',
+        },
     },
     setup(props) {
         const parser = new DOMParser()

@@ -1,12 +1,12 @@
 <template>
     <div>
         <div class="content">
-            {{content}}
+            {{ content }}
         </div>
     </div>
 </template>
 <script>
-import {defineComponent, computed} from '@vue/composition-api'
+import { defineComponent, computed } from 'vue'
 
 export default defineComponent({
     props: {
@@ -21,8 +21,8 @@ export default defineComponent({
     }
 })
 </script>
-<style lang="scss" scoped>
+<style scoped>
 .content {
-    color: $elementContentColor;
+    color: var(--xml-viewer-element-content-color);
 }
 </style>
