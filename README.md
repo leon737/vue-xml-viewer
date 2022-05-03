@@ -1,28 +1,14 @@
-# vue-xml-viewer
-The component to display formatted and colored XML document view.
+# vue3-xml-viewer
+A Vue 3 component to display a formatted and colored XML document.
+The project is forked from https://github.com/leon737/vue-xml-viewer and made Vue3 a first class citizen.
 
 ## Live demo
-https://leon737.github.io/vue-xml-viewer/
+https://antony-k1208.github.io/vue3-xml-viewer/
 
 ## Setup
 ```
-npm install vue-xml-viewer --save
-```
-
-Your project should use **Composition API**
-
-### Install:
-```
-npm install @vue/composition-api
-```
-
-### Setup Composition API:
-Add to your app entry js file:
-```javascript
-import Vue from 'vue'
-import CompositionApi from '@vue/composition-api'
-
-Vue.use(CompositionApi)
+npm install vue3-xml-viewer --save
+yarn add vue3-xml-viewer
 ```
 
 ## Usage
@@ -34,7 +20,7 @@ Vue.use(CompositionApi)
 </template>
 ```
 ```javascript
-import XmlViewer from 'vue-xml-viewer'
+import XmlViewer from 'vue3-xml-viewer'
 
 export default {
     components: {

@@ -1,10 +1,10 @@
 <template>
     <span>
-        <span class="attribute-name">{{name}}</span>
+        <span class="attribute-name">{{ name }}</span>
     </span>
 </template>
 <script>
-import {defineComponent} from '@vue/composition-api'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
     props: {
@@ -12,8 +12,8 @@ export default defineComponent({
     }
 })
 </script>
-<style lang="scss" scoped>
+<style scoped>
 .attribute-name {
-    color: $attributeNameColor;
+    color: var(--xml-viewer-attribute-name-color);
 }
 </style>
